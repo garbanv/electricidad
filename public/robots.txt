@@ -1,0 +1,40 @@
+
+User-agent: GoogleBot-Mobile
+Allow: /
+
+User-agent: GoogleBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Yahoo Pipes 2.0
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: SiteAuditBot
+Crawl-delay: 5
+Allow: /
+
+User-agent: Semrushbot-SI
+Allow: /
+
+User-agent: 008
+Disallow: /
+
+User-agent: *
+Crawl-delay: 10
+Disallow: /blog/draft
+
+Sitemap: https://luzahora.com/sitemap.xml
