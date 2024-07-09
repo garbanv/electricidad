@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
 
       </body>
 
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.G_ANALYTICS_KEY}`} />
-      <Script   id="g_analytics">
+      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.G_ANALYTICS_KEY}`} />
+      <Script   id="g_analytics" strategy="lazyOnload">
       {`
              window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
