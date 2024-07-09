@@ -17,6 +17,8 @@ export default async function Home() {
 
   const time = new Date().getHours();
 
+  console.log("time",time)
+
   const getPromedio = energyData.PVPC.filter((hora) => hora.Hora === "10-11");
   const promedio = parseInt(getPromedio[0].PCB) / 1000;
 
@@ -79,18 +81,19 @@ export default async function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {/* <p className="text-xs">{energy['Dia']}</p> */}
-                  <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                    {energy["Hora"]}
-                    {" hr "}
-                    {Number(energy["Hora"].slice(0, 2)) === time ? (
-                      <span class="relative flex h-3 w-3 py-2 ">
+                  {Number(energy["Hora"].slice(0, 2)) === time ? (
+                      <span class="relative flex h-3 w-3 mb-1">
                         <span class="animate-ping absolute  h-full w-full rounded-full bg-blue-800 opacity-75"></span>
                         <span class="  rounded-full h-3 w-3 bg-blue-500"></span>
                       </span>
                     ) : (
                       ""
                     )}
+                  {/* <p className="text-xs">{energy['Dia']}</p> */}
+                  <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+                    {energy["Hora"]}
+                    {" hr "}
+                    
                   </p>
                   <p className={`mb-3 text-xl font-semibold`}>
                     {(parseInt(energy["PCB"]) / 1000).toFixed(2)} {"€/kWh"}
