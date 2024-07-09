@@ -25,19 +25,21 @@ export default function RootLayout({ children }) {
       </body>
 
       <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.G_ANALYTICS_KEY}`} />
-      <Script   id="g_analytics" strategy="lazyOnload">
-      {`
-             window.dataLayer = window.dataLayer || [];
+   
+
+      <Script
+  dangerouslySetInnerHTML={{
+    __html: `
+    window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', ${process.env.G_ANALYTICS_KEY});
-
-              });
-          `}
-  
-
-      </Script>
+  gtag('config',  ${process.env.G_ANALYTICS_KEY});
+  `
+  }}
+  strategy="lazyOnload"
+  >
+  </Script>
     </html>
   );
 }
