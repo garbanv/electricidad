@@ -81,14 +81,14 @@ export default async function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {Number(energy["Hora"].slice(0, 2)) === time ? (
+                {/*   {Number(energy["Hora"].slice(0, 2)) === time ? (
                       <span class="relative flex h-3 w-3 mb-1">
                         <span class="animate-ping absolute  h-full w-full rounded-full bg-blue-800 opacity-75"></span>
                         <span class="  rounded-full h-3 w-3 bg-blue-500"></span>
                       </span>
                     ) : (
                       ""
-                    )}
+                    )} */}
                   {/* <p className="text-xs">{energy['Dia']}</p> */}
                   <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
                     {energy["Hora"]}
