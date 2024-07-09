@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Social from '../components/Social'
+import Script from 'next/script'
 
 /* const inter = Inter({ subsets: ["latin"] }); */
 
@@ -22,6 +23,19 @@ export default function RootLayout({ children }) {
 
 
       </body>
+      <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.G_ANALYTICS_KEY}`}>
+      {`
+             window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', ${process.env.G_ANALYTICS_KEY});
+
+              });
+          `}
+  
+
+      </Script>
     </html>
   );
 }
