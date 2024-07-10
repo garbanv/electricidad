@@ -31,7 +31,7 @@ Google AdSense: Usamos Google AdSense para mostrar anuncios en nuestro sitio web
 No vendemos, comercializamos ni transferimos tu información personal a terceros, excepto en los siguientes casos:
 
 Proveedores de Servicios: Podemos compartir tu información con proveedores de servicios de confianza que nos ayudan a operar nuestro sitio web y prestar servicios, siempre y cuando se comprometan a mantener esta información confidencial.
-Requisitos Legales: Podemos divulgar tu información cuando sea necesario para cumplir con la ley, responder a procesos legales, o proteger los derechos, propiedad o seguridad de [Nombre del Sitio Web], nuestros usuarios u otros.
+Requisitos Legales: Podemos divulgar tu información cuando sea necesario para cumplir con la ley, responder a procesos legales, o proteger los derechos, propiedad o seguridad de LuzAhora.com, nuestros usuarios u otros.
 5. Seguridad de la Información
 
 Adoptamos medidas de seguridad razonables para proteger la información que recopilamos contra el acceso, uso o divulgación no autorizados. Sin embargo, no podemos garantizar la seguridad absoluta de la información transmitida a través de Internet.
