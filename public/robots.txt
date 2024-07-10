@@ -37,4 +37,4 @@ User-agent: *
 Crawl-delay: 10
 Disallow: /blog/draft
 
-Sitemap: https://luzahora.com/sitemap.xml
+Sitemap: https://electricidad.vercel.app/sitemap.xml
