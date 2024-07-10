@@ -71,7 +71,7 @@ export default async function Home() {
                   key={index}
                   className={`
                     ${
-                      parseInt(energy["PCB"]) / 1000 > 0.12 &&
+                      parseInt(energy["PCB"]) / 1000 > 0.13 &&
                       parseInt(energy["PCB"]) / 1000 < 0.18 &&
                       "bg-orange-500"
                     }
@@ -96,7 +96,7 @@ export default async function Home() {
                     
                   </p>
                   <p className={`mb-3 text-xl font-semibold`}>
-                    {(parseInt(energy["PCB"]) / 1000).toFixed(2)} {"€/kWh"}
+                    {(parseInt(energy["PCB"]) / 1000).toFixed(3)} {"€/kWh"}
                   </p>
                  
                 </div>
