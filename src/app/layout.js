@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.G_ANALYTICS_KEY}`} />
    
 
-      <Script
+      <Script id="ganalytics"
   dangerouslySetInnerHTML={{
     __html: `
     window.dataLayer = window.dataLayer || [];
