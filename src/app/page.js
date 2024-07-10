@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 export default async function Home() {
   const getData = async () => {
     try {
-      const data = fetch("https://api.esios.ree.es/archives/70/download_json");
+      const data = fetch("https://api.esios.ree.es/archives/70/download_json", { next: { revalidate: 1600 } });
       const response = await (await data).json();
       return response;
       /*    console.log("response", response.PVPC); */
