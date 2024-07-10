@@ -40,6 +40,9 @@ export default function RootLayout({ children }) {
   strategy="lazyOnload"
   >
   </Script>
+
+  <Script id="gads" strategy="lazyOnload" async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.ADS_CLIENT_KEY}`}
+     crossorigin="anonymous"></Script>
     </html>
   );
 }
