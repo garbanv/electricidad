@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', ' ${process.env.G_ANALYTICS_KEY}');
+  gtag('config', '${process.env.G_ANALYTICS_KEY}');
   `
   }}
   strategy="lazyOnload"
